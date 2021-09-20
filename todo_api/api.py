@@ -13,7 +13,7 @@ class HelloWorld (Resource):
 
 # creating end points 
 api.add_resource(HelloWorld, "/helloworld")
-api.add_resource(HelloName, "/helloname/<string:name>")
+# api.add_resource(HelloName, "/helloname/<string:name>")
 
 if __name__ == "__main__": 
     app.run(debug=True)
