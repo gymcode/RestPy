@@ -8,5 +8,9 @@ app = Flask(__name__)
 api = Api(app)
 
 
+# creating end points 
+api.add_resource(Helloworld, "/helloworld")
+api.add_resource(HelloName, "/helloname/<string:name>")
+
 if __name__ == "__main__": 
     app.run(debug=True)
