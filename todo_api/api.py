@@ -11,9 +11,13 @@ class HelloWorld (Resource):
     def get(self): 
         return {"data": "hello, Kenneth"}
 
+
+class HelloName (Resource): 
+    def get(self):
+
 # creating end points 
 api.add_resource(HelloWorld, "/helloworld")
-# api.add_resource(HelloName, "/helloname/<string:name>")
+api.add_resource(HelloName, "/helloname/<string:name>")
 
 if __name__ == "__main__": 
     app.run(debug=True)
